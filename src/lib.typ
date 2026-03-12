@@ -5,7 +5,7 @@
 
 // template formats the document as a lab report, essay or exam.
 #let template(
-	logo:              image("/inc/default_logo.png"),
+	logo:              image("/LabTemplate/inc/default_logo.png"),
 	title:             "Lab report",
 	subtitle:          none,
 	page-header-title: none,
@@ -33,7 +33,7 @@
 
 	// Set page size and margins.
 	set page(
-		paper: "a4",
+		paper: "us-letter",
 		margin: (x: 2.5cm, top: 3.1cm, bottom: 3.55cm),
 		header: {
 			grid(
@@ -52,7 +52,7 @@
 	)
 
 	// Set default font.
-	set text(font: "New Computer Modern")
+	set text(font: "Times New Roman", size: 12pt)
 
 	// Style outline, headings, lists and quotes using the style of LaTeX.
 	show: latex-lookalike.style
@@ -153,7 +153,7 @@
 					}
 				}
 				#if lab-supervisor != none {
-					cells.push([Lab supervisor:])
+					cells.push([Teacher:])
 					cells.push([#lab-supervisor])
 				}
 				#if lab-group != none {
