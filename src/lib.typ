@@ -52,7 +52,7 @@
 	)
 
 	// Set default font.
-	set text(font: "Times New Roman", size: 12pt)
+	set text(font: "Times New Roman", size: 14pt)
 
 	// Style outline, headings, lists and quotes using the style of LaTeX.
 	show: latex-lookalike.style
@@ -179,14 +179,14 @@
 
 	// --- [ Table of contents ] ------------------------------------------------
 
-	set page(numbering: "i")
-	counter(page).update(1)
+	// set page(numbering: "i")
+	// counter(page).update(1)
 
-	outline()
-	pagebreak(weak: true)
+	// outline()
+	// pagebreak(weak: true)
 
-	// Style all links after outline.
-	show link: set text(fill: linkblue)
+	// // Style all links after outline.
+	// show link: set text(fill: linkblue)
 
 	// --- [ Main matter ] ------------------------------------------------------
 
